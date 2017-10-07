@@ -18,7 +18,7 @@ public class ConnectionProvider {
                 try {
 			Class.forName("org.postgresql.Driver");
 		} catch (ClassNotFoundException e) {
-			e.printStackTrace();
+		System.out.println(e);
 		}
 		String dbUrl = "jdbc:postgresql://"
 				+ dbUri.getHost()
