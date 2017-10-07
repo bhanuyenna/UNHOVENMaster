@@ -12,7 +12,7 @@ public class ConnectionProvider {
 	private static Connection getConnection() throws URISyntaxException,
 			SQLException {
 		URI dbUri = new URI(System.getenv("DATABASE_URL"));
-
+// This is added 
 		String username = dbUri.getUserInfo().split(":")[0];
 		String password = dbUri.getUserInfo().split(":")[1];
                 try {
